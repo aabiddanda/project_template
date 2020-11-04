@@ -15,4 +15,4 @@ docs/%.html: notebooks/%.ipynb
 	jupyter nbconvert\
 		--to html $<\
 		--output-dir $(dir $@)\
-		--template lab\
+		--template classic\
