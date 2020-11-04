@@ -14,4 +14,5 @@ print-%: ; @echo $* is $($*):
 docs/%.html: notebooks/%.ipynb
 	jupyter nbconvert\
 		--to html $<\
-		--output-dir $(dir $@)
+		--output-dir $(dir $@)\
+		--template lab\
